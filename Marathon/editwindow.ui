@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EditWindow</class>
+ <widget class="QMainWindow" name="EditWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>微软雅黑</family>
+    <pointsize>12</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>运动员成绩管理界面</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">color: rgb(68, 68, 68);
+background-color: rgb(255, 255, 255);
+background-image: url(:/images/background.png);
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableView" name="tableView">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>861</width>
+      <height>541</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1000</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>14</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <widget class="QMenu" name="menufile">
+    <property name="title">
+     <string>📂 文  件</string>
+    </property>
+    <addaction name="actionclear"/>
+    <addaction name="actionlist"/>
+   </widget>
+   <widget class="QMenu" name="menuedit">
+    <property name="title">
+     <string>✏️ 编  辑</string>
+    </property>
+    <addaction name="actionadd"/>
+    <addaction name="actiontime"/>
+    <addaction name="actiondelete"/>
+   </widget>
+   <widget class="QMenu" name="menureturn">
+    <property name="title">
+     <string>🔙 返  回</string>
+    </property>
+    <addaction name="actionexit"/>
+   </widget>
+   <addaction name="menufile"/>
+   <addaction name="menuedit"/>
+   <addaction name="menureturn"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionexit"/>
+   <addaction name="actionadd"/>
+   <addaction name="actiontime"/>
+   <addaction name="actiondelete"/>
+   <addaction name="separator"/>
+   <addaction name="actionlist"/>
+  </widget>
+  <action name="actionclear">
+   <property name="text">
+    <string>⛓️‍💥清除运动员数据</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="actionadd">
+   <property name="text">
+    <string>📝新增运动员信息</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="actiontime">
+   <property name="text">
+    <string>✒️登记运动员成绩</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="actiondelete">
+   <property name="text">
+    <string>❎删除运动员信息</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="actionexit">
+   <property name="text">
+    <string>🔚退出管理员界面</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="actionlist">
+   <property name="text">
+    <string>🗒️查看运动员号码单</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

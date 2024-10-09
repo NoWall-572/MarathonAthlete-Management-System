@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>SignupDialog.png</file>
+        <file>mainwindow.png</file>
+        <file>exit.png</file>
+        <file>Signup.png</file>
+        <file>Find.png</file>
+        <file>background.png</file>
+        <file>SigninTime.png</file>
+        <file>DeleteDialog.png</file>
+        <file>MedalDialog.png</file>
+        <file>minus.png</file>
+        <file>plus.png</file>
+        <file>ListTable.png</file>
+        <file>Over50.png</file>
+    </qresource>
+</RCC>

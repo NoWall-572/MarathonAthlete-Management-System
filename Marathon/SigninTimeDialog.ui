@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SigninTimeDialog</class>
+ <widget class="QDialog" name="SigninTimeDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>445</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>微软雅黑</family>
+    <pointsize>12</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog
+{
+	background-image: url(:/images/SigninTime.png);
+background-repeat: no-repeat;  /* 防止图片重复 */
+}
+</string>
+  </property>
+  <widget class="QPushButton" name="pushButton_ok">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>340</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>16</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+background:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, 
+stop:0 rgba(233, 233, 233, 255), 
+stop:0.35 rgba(220, 220, 220, 255), 
+stop:0.5 rgba(213, 213, 213, 255), 
+stop:0.65 rgba(230, 230, 230, 255), 
+stop:1 rgba(242, 242, 242, 255));
+ border: 2px solid rgb(128,126,126);
+ border-radius: 5px;
+	color: rgb(100, 100, 100);
+}
+QPushButton:hover{
+        background:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, 
+stop:0 rgba(250, 250, 250, 255), 
+stop:0.5 rgba(255, 255, 255, 255), 
+stop:1 rgba(250, 250, 250, 255));
+ border: 2px solid rgb(63,140,161);
+ border-radius: 5px;
+}
+ 
+QPushButton:pressed{
+        background:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, 
+stop:0 rgba(255, 255, 255, 255), 
+stop:0.5 rgba(235, 247, 253, 255), 
+stop:1 rgba(213, 237, 250, 255));
+ border: 2px solid rgb(3,110,183);
+ border-radius: 5px;
+}</string>
+   </property>
+   <property name="text">
+    <string>确   认</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_cancel">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>340</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>16</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+background:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, 
+stop:0 rgba(233, 233, 233, 255), 
+stop:0.35 rgba(220, 220, 220, 255), 
+stop:0.5 rgba(213, 213, 213, 255), 
+stop:0.65 rgba(230, 230, 230, 255), 
+stop:1 rgba(242, 242, 242, 255));
+ border: 2px solid rgb(128,126,126);
+ border-radius: 5px;
+	color: rgb(100, 100, 100);
+}
+QPushButton:hover{
+        background:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, 
+stop:0 rgba(250, 250, 250, 255), 
+stop:0.5 rgba(255, 255, 255, 255), 
+stop:1 rgba(250, 250, 250, 255));
+ border: 2px solid rgb(63,140,161);
+ border-radius: 5px;
+}
+ 
+QPushButton:pressed{
+        background:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, 
+stop:0 rgba(255, 255, 255, 255), 
+stop:0.5 rgba(235, 247, 253, 255), 
+stop:1 rgba(213, 237, 250, 255));
+ border: 2px solid rgb(3,110,183);
+ border-radius: 5px;
+}</string>
+   </property>
+   <property name="text">
+    <string>取   消</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_h">
+   <property name="geometry">
+    <rect>
+     <x>352</x>
+     <y>282</y>
+     <width>92</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QSpinBox
+{
+    color:rgb(68, 68, 68);
+	background-color: rgb(255, 255, 255);
+	width: 80px;
+	height: 40px;
+	font: 700 16pt &quot;Candara&quot;;
+     border:2px solid gray;
+     border-radius:5px;
+     
+}
+QSpinBox:up-button{
+    width:22px;
+	border-left: 2px solid #D3D3D3;
+	subcontrol-position:right;
+	image: url(:/images/plus.png);
+}
+QSpinBox:down-button{
+	border-right: 2px solid #D3D3D3;
+	subcontrol-position:left;
+	
+	image: url(:/images/minus.png);
+     width:22px;
+
+}</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_m">
+   <property name="geometry">
+    <rect>
+     <x>489</x>
+     <y>282</y>
+     <width>92</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QSpinBox
+{
+    color:rgb(68, 68, 68);
+	background-color: rgb(255, 255, 255);
+	width: 80px;
+	height: 40px;
+	font: 700 16pt &quot;Candara&quot;;
+     border:2px solid gray;
+     border-radius:5px;
+     
+}
+QSpinBox:up-button{
+    width:22px;
+	border-left: 2px solid #D3D3D3;
+	subcontrol-position:right;
+	image: url(:/images/plus.png);
+}
+QSpinBox:down-button{
+	border-right: 2px solid #D3D3D3;
+	subcontrol-position:left;
+	
+	image: url(:/images/minus.png);
+     width:22px;
+
+}</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_s">
+   <property name="geometry">
+    <rect>
+     <x>621</x>
+     <y>282</y>
+     <width>92</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QSpinBox
+{
+    color:rgb(68, 68, 68);
+	background-color: rgb(255, 255, 255);
+	width: 80px;
+	height: 40px;
+	font: 700 16pt &quot;Candara&quot;;
+     border:2px solid gray;
+     border-radius:5px;
+     
+}
+QSpinBox:up-button{
+    width:22px;
+	border-left: 2px solid #D3D3D3;
+	subcontrol-position:right;
+	image: url(:/images/plus.png);
+}
+QSpinBox:down-button{
+	border-right: 2px solid #D3D3D3;
+	subcontrol-position:left;
+	
+	image: url(:/images/minus.png);
+     width:22px;
+
+}</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>482</x>
+     <y>48</y>
+     <width>141</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Candara</family>
+     <pointsize>16</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 2px solid gray;  /* QComboBox的边框 */
+border-radius:5px;
+color: rgb(100,100, 100);
+background-color: rgb(255, 255, 255);</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>643</x>
+     <y>48</y>
+     <width>101</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>14</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+background:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, 
+stop:0 rgba(233, 233, 233, 255), 
+stop:0.35 rgba(220, 220, 220, 255), 
+stop:0.5 rgba(213, 213, 213, 255), 
+stop:0.65 rgba(230, 230, 230, 255), 
+stop:1 rgba(242, 242, 242, 255));
+ border: 2px solid rgb(128,126,126);
+ border-radius: 5px;
+	color: rgb(100, 100, 100);
+}
+QPushButton:hover{
+        background:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, 
+stop:0 rgba(250, 250, 250, 255), 
+stop:0.5 rgba(255, 255, 255, 255), 
+stop:1 rgba(250, 250, 250, 255));
+ border: 2px solid rgb(63,140,161);
+ border-radius: 5px;
+}
+ 
+QPushButton:pressed{
+        background:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, 
+stop:0 rgba(255, 255, 255, 255), 
+stop:0.5 rgba(235, 247, 253, 255), 
+stop:1 rgba(213, 237, 250, 255));
+ border: 2px solid rgb(3,110,183);
+ border-radius: 5px;
+}</string>
+   </property>
+   <property name="text">
+    <string>🔎 查  看</string>
+   </property>
+  </widget>
+  <widget class="QTableView" name="tableView">
+   <property name="geometry">
+    <rect>
+     <x>301</x>
+     <y>126</y>
+     <width>470</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(68, 68, 68);
+border:tranparent;</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MedalDialog</class>
+ <widget class="QDialog" name="MedalDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>556</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>微软雅黑</family>
+    <pointsize>12</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog
+{
+	color: rgb(68, 68, 68);
+	background-color: rgb(255, 255, 255);
+	background-image: url(:/images/MedalDialog.png);
+background-repeat: no-repeat;  /* 防止图片重复 */
+}
+
+</string>
+  </property>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>190</y>
+     <width>601</width>
+     <height>341</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>16</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+QTabWidget::pane{
+
+	border: 2px solid rgb(210, 210, 210);
+	background:rgb(246, 246, 246);
+	border-top-color:transparent;
+}
+QTabWidget::tab-bar{
+
+	background:rgb(0, 0, 0);
+	subcontrol-position:left;
+}
+QTabBar::tab{
+	color: rgb(68, 68, 68);
+	width:146px;/*宽度根据实际需要进行调整*/
+	height:32px;
+	background:rgb(210, 210, 210);
+	border: 2px  solid rgb(210, 210, 210);
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+QTabBar::tab:selected{	
+	background:rgb(246, 246, 246);
+	border-bottom-color:rgb(246, 246, 246);
+}
+QTabBar::tab:!selected{
+	background:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(240, 240, 240, 255), stop:0.5 rgba(210, 210, 210, 255), stop:1 rgba(225, 225, 225, 255));
+}
+
+
+ </string>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="tab_mansingle">
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>12</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <attribute name="title">
+     <string>🏃‍♂️‍➡️男子单人</string>
+    </attribute>
+    <widget class="QTableView" name="tableView_mansingle">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>601</width>
+       <height>301</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_womansingle">
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <attribute name="title">
+     <string>🏃‍♀️‍➡️女子单人</string>
+    </attribute>
+    <widget class="QTableView" name="tableView_womansingle">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>601</width>
+       <height>301</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_manteam">
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <attribute name="title">
+     <string>🎖️男子团体</string>
+    </attribute>
+    <widget class="QTableView" name="tableView_manteam">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>601</width>
+       <height>301</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_womanteam">
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <attribute name="title">
+     <string>🎖️女子团体</string>
+    </attribute>
+    <widget class="QTableView" name="tableView_womanteam">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>601</width>
+       <height>301</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>900</x>
+     <y>30</y>
+     <width>71</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft YaHei UI</family>
+     <pointsize>26</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+background:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, 
+stop:0 rgba(233, 233, 233, 255), 
+stop:0.35 rgba(220, 220, 220, 255), 
+stop:0.5 rgba(213, 213, 213, 255), 
+stop:0.65 rgba(230, 230, 230, 255), 
+stop:1 rgba(242, 242, 242, 255));
+ border: 2px solid rgb(128,126,126);
+ border-radius: 5px;
+	color: rgb(100, 100, 100);
+}
+QPushButton:hover{
+        background:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, 
+stop:0 rgba(250, 250, 250, 255), 
+stop:0.5 rgba(255, 255, 255, 255), 
+stop:1 rgba(250, 250, 250, 255));
+ border: 2px solid rgb(63,140,161);
+ border-radius: 5px;
+}
+ 
+QPushButton:pressed{
+        background:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, 
+stop:0 rgba(255, 255, 255, 255), 
+stop:0.5 rgba(235, 247, 253, 255), 
+stop:1 rgba(213, 237, 250, 255));
+ border: 2px solid rgb(3,110,183);
+ border-radius: 5px;
+}</string>
+   </property>
+   <property name="text">
+    <string>🔙</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

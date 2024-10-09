@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ListDialog</class>
+ <widget class="QDialog" name="ListDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>774</width>
+    <height>960</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>运动员号码单</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog
+{
+	background-image: url(:/images/ListTable.png);
+background-repeat: no-repeat;  /* 防止图片重复 */
+}
+</string>
+  </property>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>190</y>
+     <width>561</width>
+     <height>591</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>14</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTabWidget::pane{
+
+	border: 2px solid rgb(210, 210, 210);
+	background:rgb(246, 246, 246);
+	border-top-color:transparent;
+}
+QTabWidget::tab-bar{
+
+	background:rgb(0, 0, 0);
+	subcontrol-position:left;
+}
+QTabBar::tab{
+	color: rgb(68, 68, 68);
+	width:216px;/*宽度根据实际需要进行调整*/
+	height:42px;
+	background:rgb(210, 210, 210);
+	border: 2px  solid rgb(210, 210, 210);
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+QTabBar::tab:selected{	
+	background:rgb(246, 246, 246);
+	border-bottom-color:rgb(246, 246, 246);
+}
+QTabBar::tab:!selected{
+	background:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(240, 240, 240, 255), stop:0.5 rgba(210, 210, 210, 255), stop:1 rgba(225, 225, 225, 255));
+}
+
+
+ </string>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="tab_man">
+    <attribute name="title">
+     <string>男性运动员号码单</string>
+    </attribute>
+    <widget class="QTableView" name="tableView_man">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>561</width>
+       <height>551</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(68, 68, 68);
+background-color: rgb(255, 255, 255);</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_woman">
+    <attribute name="title">
+     <string>女性运动员号码单</string>
+    </attribute>
+    <widget class="QTableView" name="tableView_woman">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>561</width>
+       <height>551</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(68, 68, 68);
+background-color: rgb(255, 255, 255);</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

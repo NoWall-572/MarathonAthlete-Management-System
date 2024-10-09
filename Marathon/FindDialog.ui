@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FindDialog</class>
+ <widget class="QDialog" name="FindDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>738</width>
+    <height>417</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog
+{
+	background-image: url(:/images/Find.png);
+background-repeat: no-repeat;  /* 防止图片重复 */
+}
+
+</string>
+  </property>
+  <widget class="QPushButton" name="pushButton_ok">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>290</y>
+     <width>128</width>
+     <height>48</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>16</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+background:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, 
+stop:0 rgba(233, 233, 233, 255), 
+stop:0.35 rgba(220, 220, 220, 255), 
+stop:0.5 rgba(213, 213, 213, 255), 
+stop:0.65 rgba(230, 230, 230, 255), 
+stop:1 rgba(242, 242, 242, 255));
+ border: 2px solid rgb(128,126,126);
+ border-radius: 5px;
+	color: rgb(100, 100, 100);
+}
+QPushButton:hover{
+        background:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, 
+stop:0 rgba(250, 250, 250, 255), 
+stop:0.5 rgba(255, 255, 255, 255), 
+stop:1 rgba(250, 250, 250, 255));
+ border: 2px solid rgb(63,140,161);
+ border-radius: 5px;
+}
+ 
+QPushButton:pressed{
+        background:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, 
+stop:0 rgba(255, 255, 255, 255), 
+stop:0.5 rgba(235, 247, 253, 255), 
+stop:1 rgba(213, 237, 250, 255));
+ border: 2px solid rgb(3,110,183);
+ border-radius: 5px;
+}</string>
+   </property>
+   <property name="text">
+    <string>🔎 查  找</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_cancel">
+   <property name="geometry">
+    <rect>
+     <x>565</x>
+     <y>290</y>
+     <width>128</width>
+     <height>48</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>16</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+background:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, 
+stop:0 rgba(233, 233, 233, 255), 
+stop:0.35 rgba(220, 220, 220, 255), 
+stop:0.5 rgba(213, 213, 213, 255), 
+stop:0.65 rgba(230, 230, 230, 255), 
+stop:1 rgba(242, 242, 242, 255));
+ border: 2px solid rgb(128,126,126);
+ border-radius: 5px;
+	color: rgb(100, 100, 100);
+}
+QPushButton:hover{
+        background:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, 
+stop:0 rgba(250, 250, 250, 255), 
+stop:0.5 rgba(255, 255, 255, 255), 
+stop:1 rgba(250, 250, 250, 255));
+ border: 2px solid rgb(63,140,161);
+ border-radius: 5px;
+}
+ 
+QPushButton:pressed{
+        background:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, 
+stop:0 rgba(255, 255, 255, 255), 
+stop:0.5 rgba(235, 247, 253, 255), 
+stop:1 rgba(213, 237, 250, 255));
+ border: 2px solid rgb(3,110,183);
+ border-radius: 5px;
+}</string>
+   </property>
+   <property name="text">
+    <string>⛔ 取  消</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>152</y>
+     <width>181</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox
+{
+border: 2px solid gray;  /* QComboBox的边框 */
+border-radius:5px;
+	
+	color: rgb(136, 136, 136);
+	background-color: rgb(255, 255, 255);
+	font: 700 14pt &quot;微软雅黑&quot;;
+}
+QComboBox::drop-down {
+    subcontrol-origin: padding;  /* 设置子控件相对于组合框的内部边距对齐 */
+    subcontrol-position: top right;  /* 设置子控件的位置 */
+    width: 32px;  /* 按钮宽度 */
+    border-left: 2px solid gray;  /* 按钮左侧的分割线 */
+    background-color:lightgray;  /* 按钮的背景色 */
+	
+}
+QComboBox QAbstractItemView {
+    font: bold 14px;             
+	color: rgb(136, 136, 136);/* 项目文字颜色 */
+    background-color: blue;         /* 下拉菜单背景颜色 */
+    selection-background-color: darkblue;  /* 选中的项目的背景颜色 */
+    selection-color: yellow;        /* 选中项目的文字颜色 */
+    padding: 5px;                   /* 内边距，确保文字不靠边 */
+    border: 2px solid gray;            /* 下拉菜单的边框 */
+    border-radius: 5px;                /* 圆角边框 */
+    background-color: lightgray;       /* 下拉菜单的背景色 */
+    padding: 5px;
+    selection-background-color: darkgray;  /* 选中项目的背景色 */
+}
+</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>运动员号码</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>运动员姓名</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>运动员年龄</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>运动员国家</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>220</y>
+     <width>381</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>14</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 2px solid gray;  /* QComboBox的边框 */
+border-radius:5px;
+color: rgb(100,100, 100);
+background-color: rgb(255, 255, 255);</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
